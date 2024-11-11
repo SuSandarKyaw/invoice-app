@@ -2,8 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/bill.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Invoice app</title>
+    <meta name="title" content="Invoice app" />
+    <meta name="description" content="Let's check your balance" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Invoice app" />
+    <meta property="og:description" content="Let's check your balance" />
+    <meta
+      property="og:image"
+      content="https://www.systemx.net/wp-content/uploads/2023/12/How-to-write-an-invoice.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Invoice app" />
+    <meta property="twitter:description" content="Let's check your balance" />
+    <meta
+      property="twitter:image"
+      content="https://www.systemx.net/wp-content/uploads/2023/12/How-to-write-an-invoice.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <title>Invoice App</title>
   </head>
   <body>
@@ -20,7 +47,9 @@
         <section class="mt-3">
           <div class="container mx-auto">
             <form action="" id="createRecordForm">
-              <div class="grid grid-cols-4 gap-3 bg-blue-50 p-5 rounded-lg print:hidden">
+              <div
+                class="grid grid-cols-4 gap-3 bg-blue-50 p-5 rounded-lg print:hidden"
+              >
                 <div class="col-span-2">
                   <label
                     for="countries"
@@ -74,7 +103,12 @@
                         <th scope="col" class="px-6 py-3 text-end">Price</th>
                         <th scope="col" class="px-6 py-3 text-end">Quantity</th>
                         <th scope="col" class="px-6 py-3 text-end">Cost</th>
-                        <th scope="col" class="px-6 py-3 text-end table-cell print:hidden">Action</th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-end table-cell print:hidden"
+                        >
+                          Action
+                        </th>
                       </tr>
                     </thead>
                     <tbody id="recordGroup">
@@ -129,7 +163,9 @@
                     </tfoot>
                   </table>
                 </div>
-                <p class="hidden print:block text-center mt-5">ဝယ်ယူအားပေးမှုကို ကျေးစူးတင်ပါသည်</p>
+                <p class="hidden print:block text-center mt-5">
+                  ဝယ်ယူအားပေးမှုကို ကျေးစူးတင်ပါသည်
+                </p>
               </div>
             </form>
           </div>
@@ -220,7 +256,7 @@
                 Manage Inventory
               </button>
               <button
-              id="checkOut"
+                id="checkOut"
                 type="button"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
@@ -247,7 +283,9 @@
             </th>
             <td class="record-product-price px-6 py-4 text-end">500</td>
             <td class="px-6 py-4 text-end flex justify-center items-center">
-              <button class="quantity-sub text-blue-600 hidden group-hover:inline-block active:scale-90">
+              <button
+                class="quantity-sub text-blue-600 hidden group-hover:inline-block active:scale-90"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -264,7 +302,9 @@
                 </svg>
               </button>
               <span class="record-quantity w-5">1</span>
-              <button class="quantity-add text-blue-600 hidden group-hover:inline-block active:scale-90">
+              <button
+                class="quantity-add text-blue-600 hidden group-hover:inline-block active:scale-90"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -280,7 +320,6 @@
                   />
                 </svg>
               </button>
-              
             </td>
             <td class="record-cost px-6 py-4 text-end">1500</td>
             <td class="px-6 py-4 text-end table-cell print:hidden">
